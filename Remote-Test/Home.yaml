@@ -1,0 +1,31 @@
+Import:
+  - CommonScript
+View:
+  styles:
+    useSafeArea: true
+  onLoad:
+    executeCode:
+      body: |
+        console.log(getMyName());
+  # Optional - set the header for the screen
+  header:
+    titleText: Home
+  # Specify the body of the screen
+  body:
+    Column:
+      styles:
+        padding: 24
+        gap: 8
+      children:
+        - Text:
+            text: This is Home
+        - Button:
+            label: This is Home
+            onTap:
+              showDialog:
+                body:
+                  Text:
+                    text: This is Home
+        - Widget1:
+        - Image:
+            source: ${env.assets}${env.stock_vector_minimalistic_circular_logo_sample_vector_2278726727_jpg}
