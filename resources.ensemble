@@ -1,0 +1,15 @@
+Widgets:
+  Widget1:
+    inputs:
+      - customProperty
+    body:
+      Column:
+        children:
+          - Text:
+              text: Widget 1
+Scripts:
+  CommonScript: |-
+    function getMyName(){
+      var myname = "Ehsaan";
+      return myname;
+    }
